@@ -2,7 +2,7 @@
   "type": "minecraft:blasting",
   "category": "misc",
   "cookingtime": 1000,
-  "experience": 10,
+  "experience": 100,
   "group": "albert",
   "ingredient": {
     "item": "safiomod:albert_ore"
