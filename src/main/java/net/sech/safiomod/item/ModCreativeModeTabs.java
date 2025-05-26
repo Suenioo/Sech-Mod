@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.sech.safiomod.SafioMod;
+import net.sech.safiomod.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -19,6 +20,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.TOTEMKISSER.get());
                         output.accept(ModItems.ETETOTEM.get());
+
+                        output.accept(ModBlocks.ALBERT_ORE.get());
                     })
                     .build());
 
