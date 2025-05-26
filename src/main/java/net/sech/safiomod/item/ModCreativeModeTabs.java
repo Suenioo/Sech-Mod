@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.TOTEMKISSER.get());
                         output.accept(ModItems.ETETOTEM.get());
+                        output.accept(ModItems.ALBERT.get());
 
                         output.accept(ModBlocks.ALBERT_ORE.get());
                     })
