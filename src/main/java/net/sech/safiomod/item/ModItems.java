@@ -31,6 +31,9 @@ public class ModItems {
     public static final RegistryObject<Item> RED_SABER_UPGRADE = ITEMS.register("red_saber_upgrade",
             () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
+    public static final RegistryObject<Item> HOLODET = ITEMS.register("holodet",
+            () -> new Item(new Item.Properties().food(ModFoods.HOLODET)));
+
 
 
     public static final RegistryObject<Item> BALATRO_DISC = ITEMS.register("balatro_disc",
