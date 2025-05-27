@@ -15,6 +15,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sech.safiomod.block.ModBlocks;
 import net.sech.safiomod.item.ModCreativeModeTabs;
 import net.sech.safiomod.item.ModItems;
+import net.sech.safiomod.item.custom.EteTotem;
+import net.sech.safiomod.item.custom.TotemKisser;
+import net.sech.safiomod.network.ModNetworkHandler;
 import net.sech.safiomod.sound.ModSounds;
 import org.slf4j.Logger;
 
@@ -37,7 +40,13 @@ public class SafioMod {
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
+        MinecraftForge.EVENT_BUS.register(TotemKisser.class);
+        MinecraftForge.EVENT_BUS.register(EteTotem.class);
+        ModNetworkHandler.register();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
