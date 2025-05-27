@@ -10,5 +10,14 @@
     "sounds": [
       "safiomod:activate_ete_totem"
     ]
+  },
+  "balatro_theme": {
+    "subtitles": "sounds.safiomod.balatro_theme",
+    "sounds": [
+      {
+        "name": "safiomod:balatro_theme",
+        "stream": true
+      }
+    ]
   }
 }

@@ -13,8 +13,9 @@ public class ModSounds {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, SafioMod.MOD_ID);
 
     public static final RegistryObject<SoundEvent> ACTIVATE_TOTEM_KISSER = registerSoundEvents("activate_totem_kisser");
-
     public static final RegistryObject<SoundEvent> ACTIVATE_ETE_TOTEM = registerSoundEvents("activate_ete_totem");
+
+    public static final RegistryObject<SoundEvent> BALATRO_THEME = registerSoundEvents("balatro_theme");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(SafioMod.MOD_ID, name)));
