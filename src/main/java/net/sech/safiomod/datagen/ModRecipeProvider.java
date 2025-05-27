@@ -29,6 +29,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ALBERT_ORE.get(), 1)
                 .requires(Blocks.LAPIS_ORE, 2)
                 .requires(Blocks.EMERALD_ORE, 2)
+                .unlockedBy("has_lapis", has(Blocks.LAPIS_ORE))
                 .save(pWriter);
     }
 
