@@ -1,0 +1,14 @@
+{
+  "activate_totem_kisser": {
+    "subtitles": "sounds.safiomod.activate_totem_kisser",
+    "sounds": [
+      "safiomod:activate_totem_kisser"
+    ]
+  },
+  "activate_ete_totem": {
+    "subtitles": "sounds.safiomod.activate_ete_totem",
+    "sounds": [
+      "safiomod:activate_ete_totem"
+    ]
+  }
+}

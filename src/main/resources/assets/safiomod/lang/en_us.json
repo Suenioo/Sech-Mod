@@ -5,5 +5,8 @@
 
   "block.safiomod.albert_ore": "Albert Ore",
 
+  "sounds.safiomod.activate_totem_kisser": "Totem Kisser activates",
+  "sounds.safiomod.activate_ete_totem": "Ete Totem activates",
+
   "creativetab.sechsafio_tab": "Mod Sechsafio"
 }
