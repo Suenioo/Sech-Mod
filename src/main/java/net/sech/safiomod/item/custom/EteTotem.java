@@ -55,10 +55,10 @@ public class EteTotem extends Item {
             );
 
             // Revivir al jugador
-            player.setHealth(1.0F);
+            player.setHealth(8.0F);
             player.removeAllEffects();
-            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 900, 1));
-            player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100, 1));
+            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 350, 0));
+            player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 200, 1));
             player.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 800, 0));
 
             // Quitar el ítem

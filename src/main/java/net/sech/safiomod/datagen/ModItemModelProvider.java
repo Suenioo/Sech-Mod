@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ALBERT);
         simpleItem(ModItems.TOTEM_VESSEL);
         simpleItem(ModItems.RED_SABER_UPGRADE);
+        simpleItem(ModItems.BALATRO_DISC);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
