@@ -17,6 +17,7 @@ import net.sech.safiomod.item.ModCreativeModeTabs;
 import net.sech.safiomod.item.ModItems;
 import net.sech.safiomod.item.custom.EteTotem;
 import net.sech.safiomod.item.custom.TotemKisser;
+import net.sech.safiomod.loot.ModLootModifiers;
 import net.sech.safiomod.network.ModNetworkHandler;
 import net.sech.safiomod.sound.ModSounds;
 import org.slf4j.Logger;
@@ -36,6 +37,8 @@ public class SafioMod {
         ModBlocks.register(modEventBus);
 
         ModSounds.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
