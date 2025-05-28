@@ -10,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sech.safiomod.SafioMod;
 import net.sech.safiomod.item.custom.EteTotem;
+import net.sech.safiomod.item.custom.ButtPlug;
 import net.sech.safiomod.item.custom.TotemKisser;
 import net.sech.safiomod.sound.ModSounds;
 
@@ -36,11 +37,11 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.HOLODET)));
 
     public static final RegistryObject<Item> BUTT_PLUG = ITEMS.register("butt_plug",
-            () -> new ArmorItem(ModArmorMaterials.AMETHYST_SHARD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new ButtPlug(ModArmorMaterials.AMETHYST_SHARD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
 
     public static final RegistryObject<Item> BALATRO_DISC = ITEMS.register("balatro_disc",
-            () -> new RecordItem(6, ModSounds.BALATRO_THEME, new Item.Properties().stacksTo(1), 72000));
+            () -> new RecordItem(6, ModSounds.BALATRO_THEME, new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 72000));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
