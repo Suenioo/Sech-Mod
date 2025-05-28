@@ -11,6 +11,12 @@
       "safiomod:activate_ete_totem"
     ]
   },
+  "equip_butt_plug": {
+    "subtitles": "sounds.safiomod.equip_butt_plug",
+    "sounds": [
+      "safiomod:equip_butt_plug"
+    ]
+  },
   "balatro_theme": {
     "subtitles": "sounds.safiomod.balatro_theme",
     "sounds": [

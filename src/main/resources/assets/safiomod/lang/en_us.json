@@ -6,6 +6,8 @@
   "item.safiomod.red_saber_upgrade": "Red Saber Upgrade",
   "item.safiomod.holodet": "Holodet",
 
+  "item.safiomod.butt_plug": "Butt Plug",
+
   "item.safiomod.balatro_disc": "Balatro Music Disc",
   "item.safiomod.balatro_disc.desc": "BEST INDIE OST OAT?!1?",
 
@@ -13,6 +15,7 @@
 
   "sounds.safiomod.activate_totem_kisser": "Totem Kisser activates",
   "sounds.safiomod.activate_ete_totem": "Ete Totem activates",
+  "sounds.safiomod.equip_butt_plug": "Butt Plug equipped",
 
   "creativetab.sechsafio_tab": "Mod Sechsafio"
 }

@@ -1,5 +1,6 @@
 package net.sech.safiomod.item;
 
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.RecordItem;
@@ -34,6 +35,8 @@ public class ModItems {
     public static final RegistryObject<Item> HOLODET = ITEMS.register("holodet",
             () -> new Item(new Item.Properties().food(ModFoods.HOLODET)));
 
+    public static final RegistryObject<Item> BUTT_PLUG = ITEMS.register("butt_plug",
+            () -> new ArmorItem(ModArmorMaterials.AMETHYST_SHARD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
 
     public static final RegistryObject<Item> BALATRO_DISC = ITEMS.register("balatro_disc",

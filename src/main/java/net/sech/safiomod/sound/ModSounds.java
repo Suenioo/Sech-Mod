@@ -14,6 +14,7 @@ public class ModSounds {
 
     public static final RegistryObject<SoundEvent> ACTIVATE_TOTEM_KISSER = registerSoundEvents("activate_totem_kisser");
     public static final RegistryObject<SoundEvent> ACTIVATE_ETE_TOTEM = registerSoundEvents("activate_ete_totem");
+    public static final RegistryObject<SoundEvent> EQUIP_BUTT_PLUG = registerSoundEvents("equip_butt_plug");
 
     public static final RegistryObject<SoundEvent> BALATRO_THEME = registerSoundEvents("balatro_theme");
 
