@@ -15,7 +15,7 @@ import java.util.Map;
 public class ButtPlug extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ModArmorMaterials.AMETHYST_SHARD, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 1,
+                    .put(ModArmorMaterials.AMETHYST_SHARD, new MobEffectInstance(MobEffects.DAMAGE_BOOST, 20, 0,
                             false,false, true)).build();
 
     public ButtPlug(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
