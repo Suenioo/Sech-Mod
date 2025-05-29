@@ -26,6 +26,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RED_SABER_UPGRADE.get());
                         output.accept(ModItems.HOLODET.get());
 
+                        output.accept(ModItems.RED_SABER.get());
+
                         output.accept(ModItems.BUTT_PLUG.get());
 
                         output.accept(ModBlocks.ALBERT_ORE.get());

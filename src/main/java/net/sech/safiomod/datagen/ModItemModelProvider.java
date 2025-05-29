@@ -27,6 +27,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BUTT_PLUG);
     }
 
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(SafioMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",

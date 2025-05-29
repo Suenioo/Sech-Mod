@@ -2,6 +2,7 @@ package net.sech.safiomod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -31,7 +32,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Blocks.EMERALD_ORE, 2)
                 .unlockedBy("has_lapis", has(Blocks.LAPIS_ORE))
                 .save(pWriter);
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.TOTEM_VESSEL.get(), 1)
+                .pattern(" i ")
+                .pattern("IiI")
+                .pattern(" i ")
+                .define('i', Items.GOLD_INGOT)
+                .define('I', Items.GOLD_BLOCK)
+                .unlockedBy("has_gold", has(Items.GOLD_BLOCK))
+                .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RED_SABER_UPGRADE.get(), 1)
+                .pattern("DBD")
+                .pattern("BNB")
+                .pattern("DBD")
+                .define('D', Items.DIAMOND)
+                .define('B', Items.BLAZE_POWDER)
+                .define('N', Items.NETHER_STAR)
+                .unlockedBy("has_blaze_powder", has(Items.BLAZE_POWDER))
+                .save(pWriter);
+        SmithingTransformRecipeBuilder
+                .smithing(
+                        Ingredient.of(ModItems.RED_SABER_UPGRADE.get()),
+                        Ingredient.of(Items.NETHERITE_SWORD),
+                        Ingredient.of(Items.REDSTONE_BLOCK),
+                        RecipeCategory.COMBAT, ModItems.RED_SABER.get())
+                .unlocks("has_upgrade", has(ModItems.RED_SABER_UPGRADE.get()))
+                .save(pWriter, SafioMod.MOD_ID + "red_saber_smithing");
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

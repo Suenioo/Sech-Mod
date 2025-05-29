@@ -15,7 +15,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<ChechuEntity>> CHECHU =
             ENTITY_TYPES.register("chechu", () -> EntityType.Builder.of(ChechuEntity::new, MobCategory.CREATURE)
-                    .sized(0.7f, 0.7f).build("chechu"));
+                    .sized(1f, 1f).build("chechu"));
 
 
     public static void register(IEventBus eventBus) {

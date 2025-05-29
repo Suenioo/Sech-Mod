@@ -1,9 +1,6 @@
 package net.sech.safiomod.item;
 
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.RecordItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -38,6 +35,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> BUTT_PLUG = ITEMS.register("butt_plug",
             () -> new ButtPlug(ModArmorMaterials.AMETHYST_SHARD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> RED_SABER = ITEMS.register("red_saber",
+            () -> new SwordItem(ModToolTiers.SAFIO, 4, 2, new Item.Properties().rarity(Rarity.RARE)));
 
 
     public static final RegistryObject<Item> BALATRO_DISC = ITEMS.register("balatro_disc",
