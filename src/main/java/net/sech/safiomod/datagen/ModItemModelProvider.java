@@ -25,6 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BALATRO_DISC);
         simpleItem(ModItems.HOLODET);
         simpleItem(ModItems.BUTT_PLUG);
+        simpleItem(ModItems.TITIRITI_DISC);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

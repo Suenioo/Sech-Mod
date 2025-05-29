@@ -42,6 +42,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> BALATRO_DISC = ITEMS.register("balatro_disc",
             () -> new RecordItem(6, ModSounds.BALATRO_THEME, new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 72000));
+    public static final RegistryObject<Item> TITIRITI_DISC = ITEMS.register("titiriti_disc",
+            () -> new RecordItem(6, ModSounds.TITIRITI_FOREVER, new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 4800));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -17,6 +17,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> EQUIP_BUTT_PLUG = registerSoundEvents("equip_butt_plug");
 
     public static final RegistryObject<SoundEvent> BALATRO_THEME = registerSoundEvents("balatro_theme");
+    public static final RegistryObject<SoundEvent> TITIRITI_FOREVER = registerSoundEvents("titiriti_forever");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(SafioMod.MOD_ID, name)));

@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TOTEM_VESSEL.get());
                         output.accept(ModItems.RED_SABER_UPGRADE.get());
                         output.accept(ModItems.HOLODET.get());
+                        output.accept(ModItems.TITIRITI_DISC.get());
 
                         output.accept(ModItems.RED_SABER.get());
 

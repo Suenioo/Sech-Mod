@@ -25,5 +25,14 @@
         "stream": true
       }
     ]
+  },
+  "titiriti_forever": {
+    "subtitles": "sounds.safiomod.titiriti_forever",
+    "sounds": [
+      {
+        "name": "safiomod:titiriti_forever",
+        "stream": true
+      }
+    ]
   }
 }
