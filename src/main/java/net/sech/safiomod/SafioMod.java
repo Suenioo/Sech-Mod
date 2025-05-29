@@ -58,7 +58,7 @@ public class SafioMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sech.safiomod.SafioMod;
+import net.sech.safiomod.item.custom.AutoTotem;
 import net.sech.safiomod.item.custom.EteTotem;
 import net.sech.safiomod.item.custom.ButtPlug;
 import net.sech.safiomod.item.custom.TotemKisser;
@@ -20,6 +21,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> ETETOTEM = ITEMS.register("etetotem",
             () -> new EteTotem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+
+    public static final RegistryObject<Item> AUTOTOTEM = ITEMS.register("autototem",
+            () -> new AutoTotem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+
 
     public static final RegistryObject<Item> ALBERT = ITEMS.register("albert",
             () -> new Item(new Item.Properties()));

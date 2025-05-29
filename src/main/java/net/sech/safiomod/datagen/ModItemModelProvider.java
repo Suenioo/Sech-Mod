@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.sech.safiomod.SafioMod;
 import net.sech.safiomod.item.ModItems;
@@ -19,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         simpleItem(ModItems.TOTEMKISSER);
         simpleItem(ModItems.ETETOTEM);
+        simpleItem(ModItems.AUTOTOTEM);
         simpleItem(ModItems.ALBERT);
         simpleItem(ModItems.TOTEM_VESSEL);
         simpleItem(ModItems.RED_SABER_UPGRADE);

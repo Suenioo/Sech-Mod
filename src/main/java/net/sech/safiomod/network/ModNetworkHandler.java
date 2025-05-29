@@ -32,6 +32,12 @@ public class ModNetworkHandler {
                 .consumerNetworkThread(EteTotemActivatePacket::handle)
                 .add();
 
+        INSTANCE.messageBuilder(AutoTotemActivatePacket.class, 2, NetworkDirection.PLAY_TO_CLIENT)
+                .encoder(AutoTotemActivatePacket::encode)
+                .decoder(AutoTotemActivatePacket::decode)
+                .consumerNetworkThread(AutoTotemActivatePacket::handle)
+                .add();
+
         // Aquí puedes registrar otros paquetes si lo necesitas
     }
 
