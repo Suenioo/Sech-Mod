@@ -7,5 +7,6 @@ import net.sech.safiomod.SafioMod;
 public class ModModelLayers {
     public static final ModelLayerLocation CHECHU_LAYER = new ModelLayerLocation(
             new ResourceLocation(SafioMod.MOD_ID, "chechu_layer"), "main");
-
+    public static final ModelLayerLocation BOYKISSER_LAYER = new ModelLayerLocation(
+            new ResourceLocation(SafioMod.MOD_ID, "boykisser_layer"), "main2");
 }

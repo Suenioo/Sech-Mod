@@ -28,6 +28,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.HOLODET);
         simpleItem(ModItems.BUTT_PLUG);
         simpleItem(ModItems.TITIRITI_DISC);
+
+        withExistingParent(ModItems.BOYKISSER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.CHECHU_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

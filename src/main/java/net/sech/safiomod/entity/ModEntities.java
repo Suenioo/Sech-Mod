@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sech.safiomod.SafioMod;
+import net.sech.safiomod.entity.custom.BoykisserEntity;
 import net.sech.safiomod.entity.custom.ChechuEntity;
 
 public class ModEntities {
@@ -15,7 +16,11 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<ChechuEntity>> CHECHU =
             ENTITY_TYPES.register("chechu", () -> EntityType.Builder.of(ChechuEntity::new, MobCategory.CREATURE)
-                    .sized(1f, 1f).build("chechu"));
+                    .sized(1f, 1.6f).build("chechu"));
+
+    public static final RegistryObject<EntityType<BoykisserEntity>> BOYKISSER =
+            ENTITY_TYPES.register("boykisser", () -> EntityType.Builder.of(BoykisserEntity::new, MobCategory.CREATURE)
+                    .sized(0.5f, 2f).build("boykisser"));
 
 
     public static void register(IEventBus eventBus) {

@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sech.safiomod.block.ModBlocks;
 import net.sech.safiomod.entity.ModEntities;
+import net.sech.safiomod.entity.client.BoykisserRenderer;
 import net.sech.safiomod.entity.client.ChechuRenderer;
 import net.sech.safiomod.item.ModCreativeModeTabs;
 import net.sech.safiomod.item.ModItems;
@@ -81,6 +82,7 @@ public class SafioMod {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.CHECHU.get(), ChechuRenderer::new);
+            EntityRenderers.register(ModEntities.BOYKISSER.get(), BoykisserRenderer::new);
         }
     }
 }

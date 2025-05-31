@@ -28,6 +28,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.HOLODET.get());
                         output.accept(ModItems.TITIRITI_DISC.get());
 
+                        output.accept(ModItems.BOYKISSER_SPAWN_EGG.get());
+                        output.accept(ModItems.CHECHU_SPAWN_EGG.get());
+
                         output.accept(ModItems.RED_SABER.get());
 
                         output.accept(ModItems.BUTT_PLUG.get());

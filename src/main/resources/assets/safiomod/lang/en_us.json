@@ -7,6 +7,9 @@
   "item.safiomod.red_saber_upgrade": "Red Saber Upgrade",
   "item.safiomod.holodet": "Holodet",
 
+  "item.safiomod.boykisser_spawn_egg": "Boykisser Spawn Egg",
+  "item.safiomod.chechu_spawn_egg": "Chechu Spawn Egg",
+
   "item.safiomod.red_saber": "Red Saber",
 
   "item.safiomod.butt_plug": "Butt Plug",
@@ -22,6 +25,9 @@
   "sounds.safiomod.activate_totem_kisser": "Totem Kisser activates",
   "sounds.safiomod.activate_ete_totem": "Ete Totem activates",
   "sounds.safiomod.equip_butt_plug": "Butt Plug equipped",
+
+  "entity.safiomod.boykisser": "Boykisser",
+  "entity.safiomod.chechu": "Chechu",
 
   "creativetab.sechsafio_tab": "Mod Sechsafio"
 }

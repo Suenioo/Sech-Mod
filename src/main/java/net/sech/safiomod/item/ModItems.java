@@ -1,11 +1,13 @@
 package net.sech.safiomod.item;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.sech.safiomod.SafioMod;
+import net.sech.safiomod.entity.ModEntities;
 import net.sech.safiomod.item.custom.AutoTotem;
 import net.sech.safiomod.item.custom.EteTotem;
 import net.sech.safiomod.item.custom.ButtPlug;
@@ -50,6 +52,13 @@ public class ModItems {
     public static final RegistryObject<Item> TITIRITI_DISC = ITEMS.register("titiriti_disc",
             () -> new RecordItem(6, ModSounds.TITIRITI_FOREVER, new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON), 4800));
 
+
+    public static final RegistryObject<Item> BOYKISSER_SPAWN_EGG = ITEMS.register("boykisser_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.BOYKISSER, 0x00FFFFFF, 0x00CC3333,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> CHECHU_SPAWN_EGG = ITEMS.register("chechu_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.CHECHU, 0x00CC0000, 0x00FFCC00,
+                    new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
